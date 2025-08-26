@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-410: 410px;
+}
+
+@layer base{
+    body{
+        @apply bg-[#4B5D67] text-white;
+    }
+    button{
+        @apply cursor-pointer;
+    }
+
+}
