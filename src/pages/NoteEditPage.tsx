@@ -7,7 +7,6 @@ const NoteEditPage = () => {
   const {notes,tags,addNote,updateNote,addTag} = useNoteStore();
   const {noteId} = useParams({strict:false})
   const note = noteId?notes[noteId]:null
-  const tagsAsArray = Object.values(tags);
   const [title,setTitle]=useState(note?.title||'');
   const [content,setContent]=useState(note?.content||'');
   const [newTagName,setNewTagName] = useState('');

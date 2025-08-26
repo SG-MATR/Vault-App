@@ -1,8 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import {  Plus, TagIcon } from "lucide-react";
 import useNoteStore from "../store/noteStore";
-import { useEffect, useState } from "react";
-import type {Note} from '../types'
+import {  useState } from "react";
 
 const NotesListPage = () => {
   const {notes,tags} = useNoteStore();
