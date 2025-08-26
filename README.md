@@ -1,69 +1,95 @@
-# React + TypeScript + Vite
+📓 Vault App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Notes & Tags Management Application built with React, Vite, TypeScript, Zustand, TanStack, TailwindCSS, and Lucide React.
+You can add, edit, delete, filter, and view notes & tags — all in a fast and responsive UI.
 
-Currently, two official plugins are available:
+🚀 Live Demo: Vault App on Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
+📝 Notes
 
-## Expanding the ESLint configuration
+➕ Add Notes – create and organize your ideas instantly.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✏️ Edit Notes – update existing notes easily.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🗑️ Delete Notes – remove notes you no longer need.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+🔍 Filter & Search – quickly find notes.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📂 Show Details – open and view any note.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🏷️ Tags
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+➕ Add Tags – categorize and label your notes.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+✏️ Edit Tags – rename or update tags anytime.
+
+🗑️ Delete Tags – clean up unused tags.
+
+🔗 Link Tags to Notes – organize your notes with multiple tags.
+
+🎨 UI
+
+Fully responsive design styled with TailwindCSS.
+
+🛠️ Tech Stack
+
+⚛️ React + Vite – lightning-fast development setup.
+
+🟦 TypeScript – type safety and clean code.
+
+📦 Zustand – global state management.
+
+📊 TanStack – advanced data utilities (query/cache).
+
+🎨 TailwindCSS – utility-first CSS framework for styling.
+
+🔔 Lucide React – modern icon library.
+
+🌐 Vercel – deployment & hosting.
+
+🔑 Main Hooks Used
+
+useState – manage component-level state.
+
+useNavigate – programmatic navigation.
+
+useParams – access dynamic route parameters.
+
+useRouter – routing logic handling.
+
+🚀 Getting Started
+1️⃣ Clone the repo
+git clone https://github.com/SG-MATR/vault-app.git
+cd vault-app
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run locally
+npm run dev
+
+4️⃣ Build for production
+npm run build
+
+📂 Project Structure
+src/
+ ├── components/   # Reusable UI components
+ ├── store/        # Zustand global store
+ ├── pages/        # Main routes
+ ├── hooks/        # Custom hooks
+ ├── styles/       # TailwindCSS styles & configs
+ └── types/        # TypeScript interfaces & types
+
+🌟 Live Demo
+
+👉 Vault App on Vercel
+
+🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to fork this repo and submit a PR.
+
+📄 License
+
+This project is licensed under the MIT License – free to use and modify.
